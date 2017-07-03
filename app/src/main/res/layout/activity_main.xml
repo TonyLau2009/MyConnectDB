@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="jocelyn_test03.com.myconnectdb.MainActivity"
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First name"
+        android:textSize="14dp"
+        android:id="@+id/edtFname"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tvFname"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last name"
+        android:textSize="14dp"
+        android:id="@+id/edtLname"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/edtFname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/edtFname"
+        android:layout_alignStart="@+id/edtFname"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textSize="14dp"
+        android:id="@+id/edtUname"
+        android:textColor="@android:color/black"
+        android:scrollbarSize="14dp"
+        android:layout_below="@+id/edtLname"
+        android:layout_alignLeft="@+id/edtLname"
+        android:layout_alignStart="@+id/edtLname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passwords"
+        android:textSize="14dp"
+        android:id="@+id/edtPwd"
+        android:textColor="@android:color/black"
+        android:scrollbarSize="14dp"
+        android:layout_below="@+id/edtUname"
+        android:layout_alignLeft="@+id/edtUname"
+        android:layout_alignStart="@+id/edtUname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="14dp"
+        android:id="@+id/edtEmail"
+        android:textColor="@android:color/black"
+        android:scrollbarSize="14dp"
+        android:layout_below="@+id/edtPwd"
+        android:layout_alignLeft="@+id/edtPwd"
+        android:layout_alignStart="@+id/edtPwd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:textSize="16dp"
+        android:id="@+id/tvLname"
+        android:textColor="@android:color/black"
+        android:scrollbarSize="14dp"
+        android:layout_alignBaseline="@+id/edtLname"
+        android:layout_alignBottom="@+id/edtLname"
+        android:layout_toLeftOf="@+id/edtFname"
+        android:layout_toStartOf="@+id/edtFname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textSize="16dp"
+        android:id="@+id/tvFname"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/edtFname"
+        android:layout_alignBottom="@+id/edtFname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:textSize="16dp"
+        android:id="@+id/tvUname"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/edtUname"
+        android:layout_alignBottom="@+id/edtUname"
+        android:layout_alignLeft="@+id/tvLname"
+        android:layout_alignStart="@+id/tvLname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="16dp"
+        android:id="@+id/tvPwd"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/edtPwd"
+        android:layout_alignBottom="@+id/edtPwd"
+        android:layout_alignLeft="@+id/tvUname"
+        android:layout_alignStart="@+id/tvUname" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="16dp"
+        android:id="@+id/tvEmail"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/edtEmail"
+        android:layout_alignBottom="@+id/edtEmail"
+        android:layout_alignLeft="@+id/tvPwd"
+        android:layout_alignStart="@+id/tvPwd" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="18dp"
+        android:id="@+id/btnSignup"
+        android:textColor="@android:color/background_light"
+        android:layout_alignLeft="@+id/tvPwd"
+        android:layout_alignStart="@+id/tvPwd"
+        android:layout_marginTop="400dp"
+        android:background="@color/colorAccent" />
+
+
+</RelativeLayout>
